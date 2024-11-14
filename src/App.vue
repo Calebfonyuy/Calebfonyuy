@@ -1,15 +1,16 @@
 <template>
   <div class="container-fluid row h-100 w-100">
-    <div class="col-sm-12 col-md-3 h-100">
-      <nav class="navbar bg-body-tertiary h-100">
+    <div class="col-sm-12 col-md-2 h-100 sidebar">
+      <nav class="navbar sticky-top">
         <div class="container-fluid text-wrap">
           <a href="#" class="navbar-brand text-wrap">
             <img src="/caleb.png" alt="logo" height="150" class="d-inline-block align-text-top image-fluid w-100 rounded-pill">
-            <br>
-            Caleb Fonyuy-Asheri
+            <span class="name">
+              Caleb Fonyuy-Asheri
+            </span>
           </a>
         </div>
-        <ul class="navbar-nav nav justify-content-start text-center h-100 text-wrap">
+        <ul class="navbar-nav nav justify-content-start text-center text-wrap">
           <li class="nav-item">
             <span class="nav-link">
               <RouterLink to="/">Home</RouterLink>
@@ -53,10 +54,10 @@
         </ul>
       </nav>
     </div>
-    <div class="col-sm-12 col-md-9 h-100">
-      <main>
+    <div class="col-sm-12 col-md-9 content">
+      <div class="container-fluid mt-5">
         <RouterView />
-      </main>
+      </div>
     </div>
   </div>
 </template>

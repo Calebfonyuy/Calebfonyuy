@@ -26,6 +26,153 @@ export default {
                     description: 'Developing and maintaining web applications.'
                 },
                 {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
+                    id: 1,
+                    title: 'Software Engineer',
+                    company: 'Tech Company',
+                    duration: 'Jan 2020 - Present',
+                    description: 'Developing and maintaining web applications.'
+                },
+                {
                     id: 2,
                     title: 'Frontend Developer',
                     company: 'Web Solutions',

@@ -1,6 +1,15 @@
 <template>
-    <div>
-        <h1>Hello World from Homepage</h1>
+    <div class="mt-3 personal-info">
+        <span class="name">Caleb Fonyuy-Asheri</span>
+        <span class="title">PhD Student</span>
+        <span class="enterprise">INRIA Research Center - University of Rennes, France</span>
+        <span class="email">fonyuy-asheri.caleb@inria.fr</span>
+    </div>
+    <span class="page-title mt-5">Bio</span>
+    <div class="mt-5 bio">
+        I am flexible, reliable and posses great problem analysis and time management skills. I am also a fast learner and very
+able to work both as part of a team and on my own initiative, adapting to challenges as need be. As an IT Engineer, I
+have particular interest in information systems: building, maintaining, automating and optimising these systems.
     </div>
 </template>
 
@@ -11,7 +20,4 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-    color: #42b983;
-}
 </style>

@@ -1,14 +1,16 @@
 <template>
     <div class="technical-skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li v-for="skill in skills" :key="skill.name">
-                <span>{{ skill.name }}</span>
-                <span class="stars">
-                    <i v-for="n in 5" :key="n" class="star" :class="{ filled: n <= skill.level }">★</i>
-                </span>
-            </li>
-        </ul>
+        <span class="page-title">Technical Skills</span>
+        <div class="page-content">
+            <ul>
+                <li v-for="skill in skills" :key="skill.name">
+                    <span>{{ skill.name }}</span>
+                    <span class="stars">
+                        <i v-for="n in 5" :key="n" class="star" :class="{ filled: n <= skill.level }">★</i>
+                    </span>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -30,25 +32,6 @@ export default {
 </script>
 
 <style scoped>
-.technical-skills {
-    font-family: Arial, sans-serif;
-}
-
-.technical-skills h2 {
-    margin-bottom: 1em;
-}
-
-.technical-skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.technical-skills li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5em;
-}
-
 .technical-skills .stars {
     margin-left: 1em;
 }

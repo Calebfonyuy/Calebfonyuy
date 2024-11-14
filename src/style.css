@@ -1,4 +1,100 @@
 html, body, #app {
-  height: 100% !important;
-  width: 100% !important;
+  height: 100%;
+  background-color: #335C67;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar{
+  background-color: #540B0E;
+  color: #fff3b0;
+  /* position: fixed; */
+}
+
+.content {
+  /* position:fixed; */
+  color: #fff;
+}
+
+.nav-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  color: #42b983;
+}
+
+.nav-link a.active {
+  color: #42b983;
+}
+
+.name, .title, .enterprise, .email{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #ecc1c3;
+}
+
+.name {
+  color: #E09F3E;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.personal-info {
+  display: block;
+  /* border-bottom: #fff solid 1px; */
+}
+
+.personal-info .name{
+  font-size: 40px;
+}
+
+.title {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+.enterprise {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+} 
+
+.email {
+  color: #bad3e7;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+}
+
+.bio {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+}
+
+.page-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  display: block;
+  color: #E09F3E;
+  border-bottom: #fff solid 1px;
+  margin-bottom: 2px;
+}
+
+.page-content {
+  margin-top: 10px;
+}
+
+.contact-form {
+  margin-top: 10px;
+}
+
+.form-control {
+  border: none !important;
+  border-bottom: 1px solid #fff !important;
+  background-color: #cedbdf !important;
+}
+
+.input-group-text {
+  background-color: #335C67 !important;
+  border: none !important;
+  color: #fff !important;
 }

@@ -1,28 +1,33 @@
 <template>
     <div>
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 123 Main Street, Anytown, USA</p>
-            <p><strong>Email:</strong> example@example.com</p>
-            <p><strong>Phone:</strong> (123) 456-7890</p>
-        </div>
-        <div class="contact-form">
-            <form @submit.prevent="handleSubmit">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" v-model="name" required />
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" v-model="email" required />
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" v-model="message" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+        <span class="page-title">Contact</span>
+        <div class="page-content">
+            <div class="container-fluid mb-3">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> Rennes, France</p>
+                <p><strong>Email:</strong> fonyuy-asheri.caleb@inria.fr</p>
+                <p><strong>Phone:</strong> +33 (0)7 64 24 74 75</p>
+            </div>
+            <div class="container-fluid contact-form mt-5">
+                <h2>Leave me a message</h2>
+                <p>Feel free to reach out to me. I will get back to you as soon as possible.</p>
+                <hr />
+                <form @submit.prevent="handleSubmit" class="form">
+                    <div class="input-group mb-3">
+                        <span for="name" class="input-group-text">Name:</span>
+                        <input type="text" id="name" v-model="name" class="form-control" required />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span for="email" class="input-group-text">Email:</span>
+                        <input type="email" id="email" class="form-control" v-model="email" required />
+                    </div>
+                    <div class="ms-3">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea id="message" class="form-control" rows="5" v-model="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2 w-50">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 </template>
@@ -51,41 +56,4 @@ export default {
 </script>
 
 <style scoped>
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form div {
-    margin-bottom: 1em;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 0.5em;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    padding: 0.7em 1.5em;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
 </style>
