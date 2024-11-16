@@ -79,8 +79,31 @@ html, body, #app {
   margin-bottom: 2px;
 }
 
+.page-subtitle {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  display: block;
+  color: #E09F3E;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+
+
+.content-header {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  display: block;
+  color: #e9c58e;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
 .page-content {
   margin-top: 10px;
+  display: block;
 }
 
 .contact-form {
@@ -98,3 +121,35 @@ html, body, #app {
   border: none !important;
   color: #fff !important;
 }
+
+.list-element {
+  display: block;
+}
+
+.list-title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 17pt;
+  color: #E9C46A;
+  margin-bottom: 5px;
+}
+
+.list-detail {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 5px !important;
+}
+
+.list-date {
+  color: #E76F51;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.list-institution {
+  color: #E76F51;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+}
+

@@ -1,12 +1,12 @@
 <template>
     <div class="publications">
-        <h2>Scientific Publications</h2>
+        <span class="page-title">Scientific Publications</span>
         <ul>
             <li v-for="publication in publications" :key="publication.id">
-                <h3>{{ publication.title }}</h3>
-                <p>{{ publication.authors }}</p>
-                <p>{{ publication.journal }}</p>
-                <p>{{ publication.year }}</p>
+                <span class="list-element list-title">{{ publication.title }}</span>
+                <span class="list-element list-detail">{{ publication.authors }}</span>
+                <span class="list-element list-detail">{{ publication.journal }}</span>
+                <span class="list-element list-date">{{ publication.year }}</span>
             </li>
         </ul>
     </div>
@@ -20,19 +20,11 @@ export default {
             publications: [
                 {
                     id: 1,
-                    title: 'Publication Title 1',
-                    authors: 'Author 1, Author 2',
-                    journal: 'Journal Name 1',
-                    year: 2021
-                },
-                {
-                    id: 2,
-                    title: 'Publication Title 2',
-                    authors: 'Author 3, Author 4',
-                    journal: 'Journal Name 2',
-                    year: 2020
+                    title: 'TGVM: Live Migration of Virtual Machines on Heterogenous Same ISA Processors',
+                    authors: 'Caleb FONYUY-ASHERI, Djob Mvondo, Fred FABO ONANINA, Alain TCHANA',
+                    journal: 'SPMA 2022',
+                    year: 2022
                 }
-                // Add more publications as needed
             ]
         };
     }
@@ -40,28 +32,4 @@ export default {
 </script>
 
 <style scoped>
-.publications {
-    padding: 20px;
-}
-
-.publications h2 {
-    margin-bottom: 20px;
-}
-
-.publications ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.publications li {
-    margin-bottom: 20px;
-}
-
-.publications h3 {
-    margin: 0;
-}
-
-.publications p {
-    margin: 5px 0;
-}
 </style>

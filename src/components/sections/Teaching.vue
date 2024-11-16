@@ -1,12 +1,13 @@
 <template>
     <div class="teaching-experiences">
-        <h2>Teaching Experiences</h2>
+        <span class="page-title">Teaching Experiences</span>
+
         <ul>
             <li v-for="experience in experiences" :key="experience.id">
-                <h3>{{ experience.title }}</h3>
-                <p>{{ experience.institution }}</p>
-                <p>{{ experience.duration }}</p>
-                <p>{{ experience.description }}</p>
+                <span class="list-element list-title">{{ experience.title }}</span>
+                <span class="list-element list-institution">{{ experience.institution }}</span>
+                <span class="list-element list-date">{{ experience.duration }}</span>
+                <span class="list-element list-detail">{{ experience.description }}</span>
             </li>
         </ul>
     </div>
@@ -20,50 +21,23 @@ export default {
             experiences: [
                 {
                     id: 1,
-                    title: 'Introduction to Computer Science',
-                    institution: 'University of Example',
-                    duration: 'Jan 2020 - Dec 2020',
-                    description: 'Taught the basics of computer science to undergraduate students.'
+                    title: 'Introduction to Live migration',
+                    institution: 'National Advanced School of Engineering Yaounde, Cameroon',
+                    duration: 'December 2021',
+                    description: 'Taught the basics live migration of virtual machines to undergraduate students.'
                 },
                 {
                     id: 2,
-                    title: 'Advanced JavaScript',
-                    institution: 'Tech Academy',
-                    duration: 'Mar 2021 - Present',
-                    description: 'Conducted workshops on advanced JavaScript topics.'
+                    title: 'Live Migration of Virtual Machines',
+                    institution: 'ENS Lyon, France',
+                    duration: '9th October 2024',
+                    description: 'Taught the basics live migration of virtual machines to undergraduate students. The class included a practical session to present the challenges faced by this procedure in heterogeneous environments.'
                 }
-                // Add more experiences as needed
-            ]
+            ],
         };
     }
 };
 </script>
 
 <style scoped>
-.teaching-experiences {
-    padding: 20px;
-}
-
-.teaching-experiences h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.teaching-experiences ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.teaching-experiences li {
-    margin-bottom: 20px;
-}
-
-.teaching-experiences h3 {
-    font-size: 20px;
-    margin: 0;
-}
-
-.teaching-experiences p {
-    margin: 5px 0;
-}
 </style>

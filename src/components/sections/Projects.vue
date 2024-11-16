@@ -1,8 +1,11 @@
 <template>
     <div class="projects-section">
-        <h1>Projects</h1>
+        <span class="page-title">Projects</span>
         <div v-for="project in projects" :key="project.id" class="project">
-            <h2>{{ project.name }}</h2>
+            <span class="list-element list-title">{{ project.name }}</span>
+            <span class="list-element list-detail">{{ project.description }}</span>
+            <span class="list-element list-date">{{ project.duration }}</span>
+            <span class="content-header">Tasks</span>
             <ul>
                 <li v-for="task in project.tasks" :key="task.id">{{ task.name }}</li>
             </ul>
@@ -19,6 +22,8 @@ export default {
                 {
                     id: 1,
                     name: 'Project One',
+                    description: 'This is a description of Project One',
+                    duration: 'January',
                     tasks: [
                         { id: 1, name: 'Task One' },
                         { id: 2, name: 'Task Two' },
@@ -27,6 +32,8 @@ export default {
                 {
                     id: 2,
                     name: 'Project Two',
+                    description: 'This is a description of Project Two',
+                    duration: 'February',
                     tasks: [
                         { id: 3, name: 'Task Three' },
                         { id: 4, name: 'Task Four' },
@@ -39,27 +46,4 @@ export default {
 </script>
 
 <style scoped>
-.projects-section {
-    padding: 20px;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background: #f9f9f9;
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
 </style>
