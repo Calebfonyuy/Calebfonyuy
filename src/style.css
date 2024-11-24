@@ -153,3 +153,9 @@ html, body, #app {
   font-weight: bold;
 }
 
+.project {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
