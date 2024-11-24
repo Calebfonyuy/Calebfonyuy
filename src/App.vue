@@ -1,65 +1,68 @@
 <template>
-  <div class="container-fluid row h-100 w-100">
-    <div class="col-sm-12 col-md-2 h-100 sidebar">
-      <nav class="navbar sticky-top">
-        <div class="container-fluid text-wrap">
-          <a href="#" class="navbar-brand text-wrap">
-            <img src="/caleb.png" alt="logo" height="150" class="d-inline-block align-text-top image-fluid w-100 rounded-pill">
-            <span class="name">
+    <div class="row sidebar">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand text-center">
+            <img src="/caleb.png" alt="logo" height="50" class="d-inline-block mx-auto rounded-pill">
+            <span class="name text-center">
               Caleb Fonyuy-Asheri
             </span>
           </a>
-        </div>
-        <ul class="navbar-nav nav justify-content-start text-center text-wrap">
-          <li class="nav-item">
-            <span class="nav-link">
-              <RouterLink to="/">Home</RouterLink>
-            </span>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link">
-              <RouterLink to="/education">Education</RouterLink>
-            </span>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link">
-              <RouterLink to="/professional-experience">Professional Experience</RouterLink>
-            </span>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link">
-              <RouterLink to="/technical-skills">Technical Skills</RouterLink>
-            </span>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link">
-              <RouterLink to="/projects">Projects</RouterLink>
-            </span>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link">
-              <RouterLink to="/contact">Contact</RouterLink>
-            </span>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link">
-              <RouterLink to="/teaching">Teaching</RouterLink>
-            </span>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link">
-              <RouterLink to="/publications">Publications</RouterLink>
-            </span>
-          </li>
-        </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon btn btn-light"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <span class="nav-link">
+                  <RouterLink to="/">Home</RouterLink>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link">
+                  <RouterLink to="/education">Education</RouterLink>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link">
+                  <RouterLink to="/professional-experience">Professional Experience</RouterLink>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link">
+                  <RouterLink to="/technical-skills">Technical Skills</RouterLink>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link">
+                  <RouterLink to="/projects">Projects</RouterLink>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link">
+                  <RouterLink to="/contact">Contact</RouterLink>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link">
+                  <RouterLink to="/teaching">Teaching</RouterLink>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link">
+                  <RouterLink to="/publications">Publications</RouterLink>
+                </span>
+              </li>
+            </ul>
+          </div>
+      </div>
       </nav>
     </div>
-    <div class="col-sm-12 col-md-9 content">
+    <div class="col-sm-12 content">
       <div class="container-fluid mt-5">
         <RouterView />
       </div>
     </div>
-  </div>
 </template>
 
 <style scoped>
