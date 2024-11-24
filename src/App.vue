@@ -1,5 +1,5 @@
 <template>
-    <div class="row sidebar">
+    <div class="container-fluid row sidebar">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a href="#" class="navbar-brand text-center">
