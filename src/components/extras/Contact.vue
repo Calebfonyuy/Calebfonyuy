@@ -50,6 +50,26 @@ export default {
             this.name = '';
             this.email = '';
             this.message = '';
+
+            // Send the message to the backend
+            fetch('https://calebfonyuy.suuynyuy.com/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: this.name,
+                    email: this.email,
+                    message: this.message
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
         }
     }
 };
