@@ -1,6 +1,6 @@
 <?php
 
-namespace Models;
+namespace Http;
 
 class Response {
     protected static $status = 200;

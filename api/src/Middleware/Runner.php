@@ -4,15 +4,15 @@ namespace Middleware;
 
 use Http\Response;
 
-$middleware_registry = [
-    'RouteMiddleware' => 'Middleware\RouteMiddleware',
-    'RequestValidator' => 'Controllers\RequestValidator'
-];
+class Runner {
 
-class MiddlewareRunner {
+    private static $MIDDLEWARE_REGISTRY = [
+        'RouteMiddleware' => 'Middleware\RouteMiddleware',
+        'OriginMiddleware' => 'Middleware\OriginMiddleware',
+    ];
 
     public static function runAll(){
-        foreach ($middleware_registry as $middleware) {
+        foreach (self::$MIDDLEWARE_REGISTRY as $middleware) {
             self::run(new $middleware);
         }
     }

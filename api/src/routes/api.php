@@ -3,7 +3,7 @@
 return [
     '/api/send-email' => [
         'method' => 'POST',
-        'controller' => 'EmailController',
+        'controller' => 'Controllers\MailController',
         'action' => 'sendEmail',
     ],
 ];

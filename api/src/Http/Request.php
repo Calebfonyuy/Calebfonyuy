@@ -17,9 +17,9 @@ class Request {
 
     public static function fromGlobals() {
         $method = $_SERVER['REQUEST_METHOD'];
-        $uri = $_SERVER['REQUEST_URI'];
+        $uri = get_current_route();
         $headers = getallheaders();
-        $body = file_get_contents('php://input');
+        $body = $_REQUEST;
 
         return new Request($method, $uri, $headers, $body);
     }

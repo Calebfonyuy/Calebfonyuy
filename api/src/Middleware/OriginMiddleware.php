@@ -6,7 +6,7 @@ use Http\Response;
 
 class OriginMiddleware extends Middleware {
     public function run() {
-        $allowed_origin = get_allowed_origin();
+        $allowed_origin = get_allowed_origins();
 
         if (isset($_SERVER['HTTP_ORIGIN'])) {
             $origin = parse_url($_SERVER['HTTP_ORIGIN'], PHP_URL_HOST);

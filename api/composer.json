@@ -3,6 +3,12 @@
         "phpmailer/phpmailer": "^6.9"
     },
     "autoload": {
+        "psr-4": {
+            "Middleware\\": "src/Middleware",
+            "Controllers\\": "src/Controllers",
+            "Models\\": "src/Models",
+            "Http\\": "src/Http"
+        },
         "files": [
             "src/helpers.php"
         ]

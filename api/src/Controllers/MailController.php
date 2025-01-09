@@ -11,7 +11,13 @@ class MailController
 {
     public function sendEmail(Request $request)
     {
-        $mail = new PHPMailer();
+        $request = RequestValidator::validateRequest();
+        if ($request instanceof Response) {
+            $request->send();
+            return;
+        }
+        
+        $mail = new PHPMailer(true);
         $mail->isSMTP();
 
         $mail->Host = get_env('MAIL_HOST');
@@ -27,12 +33,13 @@ class MailController
         $mail->Subject = "New message from {$request->body['name']}( {$request->body['email']} )";
         $mail->Body = $request->body['message'];
 
-        if ($mail->send()) {
+        try {
+            $mail->send();
             $response = new Response(200, 'OK', [], 'Email sent successfully.');
-            $response->send();
-            return;
+            return $response;
+        } catch (Exception $e) {
+            $response = new Response(500, 'Internal Server Error', [], $mail->ErrorInfo);
+            return $response;
         }
-        $response = new Response(500, 'Internal Server Error', [], 'Email could not be sent.');
-        $response->send();
     }
 }

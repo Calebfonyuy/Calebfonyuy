@@ -1,21 +1,17 @@
 <?php
 
-use Middleware\Runner;
-
 class App {
 
     private function run_middleware(){
-        $runner = new Runner();
-        $runner->run();
+        $runner = new Middleware\Runner();
+        $runner->runAll();
     }
 
     private function run_controller(){
         $routes = require_once __DIR__ . '/routes/api.php';
-        $request = Request::fromGlobals();
+        $request = Http\Request::fromGlobals();
         $method = $request->method;
         $uri = $request->uri;
-        $headers = $request->headers;
-        $body = $request->body;
 
         foreach ($routes as $route => $routeConfig) {
             if ($route === $uri && $routeConfig['method'] === $method) {
@@ -27,7 +23,7 @@ class App {
             }
         }
 
-        $response = new Response(404, 'Not Found', [], 'Route not found.');
+        $response = new Http\Response(404, 'Not Found', [], 'Route not found.');
         $response->send();
     }
 
