@@ -43,19 +43,14 @@ export default {
     },
     methods: {
         handleSubmit() {
-            console.log('Name:', this.name);
-            console.log('Email:', this.email);
-            console.log('Message:', this.message);
-            // Clear the form
-            this.name = '';
-            this.email = '';
-            this.message = '';
-
             // Send the message to the backend
-            fetch('https://calebfonyuy.suuynyuy.com/contact', {
+            fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Origin': 'https://calebfonyuy.suuynyuy.com',
+                    'Access-Control-Allow-Origin': '*'
+                    // 'Access-Control-Allow-Origin': 'https://calebapi.suuynyuy.com'
                 },
                 body: JSON.stringify({
                     name: this.name,
@@ -66,6 +61,10 @@ export default {
             .then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
+                // Clear the form
+                this.name = '';
+                this.email = '';
+                this.message = '';
             })
             .catch((error) => {
                 console.error('Error:', error);
