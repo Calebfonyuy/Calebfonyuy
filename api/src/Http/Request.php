@@ -19,7 +19,7 @@ class Request {
         $method = $_SERVER['REQUEST_METHOD'];
         $uri = get_current_route();
         $headers = getallheaders();
-        $body = $_REQUEST;
+        $body = json_decode(file_get_contents('php://input'), true);
 
         return new Request($method, $uri, $headers, $body);
     }

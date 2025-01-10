@@ -13,8 +13,7 @@ class MailController
     {
         $request = RequestValidator::validateRequest();
         if ($request instanceof Response) {
-            $request->send();
-            return;
+            return $request;
         }
         
         $mail = new PHPMailer(true);

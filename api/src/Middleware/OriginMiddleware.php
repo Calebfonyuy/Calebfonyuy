@@ -16,7 +16,7 @@ class OriginMiddleware extends Middleware {
             }
             return null;
         } else {
-            $response = new Response(400, 'Bad Request', [], 'Origin header not found.');
+            $response = new Response(400, 'Bad Request', [], 'HTTP_ORIGIN header not found.');
             return $response;
         }
     }
