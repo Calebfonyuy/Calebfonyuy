@@ -20,3 +20,8 @@ function get_env(string $key){
     $env = parse_ini_file(__DIR__ . '/../.env');
     return $env[$key] ?? null;
 }
+
+function get_gallery(){
+    $gallery = require 'gallery.php';
+    return $gallery;
+}
