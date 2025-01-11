@@ -10,6 +10,7 @@ import Service from './components/sections/Service.vue';
 import Teaching from './components/sections/Teaching.vue';
 import TechnicalSkills from './components/sections/TechnicalSkills.vue';
 import Projects from './components/sections/Projects.vue';
+import Photography from "./components/sections/Photography.vue";
 
 import Contact from './components/extras/Contact.vue';
 
@@ -40,6 +41,11 @@ const routes = [
         path: '/service',
         name: 'Service',
         component: Service
+    },
+    {
+        path: '/photography',
+        name: 'Photography',
+        component: Photography
     },
     {
         path: '/teaching',

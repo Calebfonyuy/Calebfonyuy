@@ -20,6 +20,16 @@
               </li>
               <li class="nav-item">
                 <span class="nav-link">
+                  <RouterLink to="/teaching">Teaching</RouterLink>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link">
+                  <RouterLink to="/publications">Publications</RouterLink>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link">
                   <RouterLink to="/education">Education</RouterLink>
                 </span>
               </li>
@@ -45,12 +55,7 @@
               </li>
               <li class="nav-item">
                 <span class="nav-link">
-                  <RouterLink to="/teaching">Teaching</RouterLink>
-                </span>
-              </li>
-              <li class="nav-item">
-                <span class="nav-link">
-                  <RouterLink to="/publications">Publications</RouterLink>
+                  <RouterLink to="/photography">Photography</RouterLink>
                 </span>
               </li>
             </ul>
