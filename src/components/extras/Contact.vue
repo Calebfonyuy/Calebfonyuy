@@ -49,8 +49,6 @@ export default {
                 headers: {
                     'Content-Type': 'application/json',
                     'Origin': 'https://calebfonyuy.suuynyuy.com',
-                    'Access-Control-Allow-Origin': '*'
-                    // 'Access-Control-Allow-Origin': 'https://calebapi.suuynyuy.com'
                 },
                 body: JSON.stringify({
                     name: this.name,
