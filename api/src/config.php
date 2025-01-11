@@ -7,6 +7,7 @@ return [
 
     'ALLOWED_ROUTES' => [
         '/api/send-email',
+        '/api/gallery',
     ],
 
     'controller_namespace' => 'Controller',

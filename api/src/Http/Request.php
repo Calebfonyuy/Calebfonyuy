@@ -8,7 +8,7 @@ class Request {
     public $headers;
     public $body;
 
-    public function __construct(string $method, string $uri, array $headers, array $body) {
+    public function __construct(string $method, string $uri, array $headers, array|null $body) {
         $this->method = $method;
         $this->uri = $uri;
         $this->headers = $headers;
