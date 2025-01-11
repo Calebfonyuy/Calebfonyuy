@@ -10,7 +10,7 @@
 export default {
     name: 'Photography',
     data() {
-        fetch('https://calebfonyuy.suuynyuy.com/api/gallery')
+        fetch('https://calebapi.suuynyuy.com/api/gallery')
             .then(response => response.json())
             .then(data => {
                 this.photos = data;
