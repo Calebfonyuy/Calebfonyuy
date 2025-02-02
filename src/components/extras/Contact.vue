@@ -5,7 +5,7 @@
             <div class="container-fluid mb-3">
                 <h2>Contact Information</h2>
                 <p><strong>Address:</strong> Rennes, France</p>
-                <p><strong>Email:</strong> fonyuy-asheri.caleb@inria.fr</p>
+                <p><strong>Email:</strong> fonyuy (dash) asheri (dot) caleb (at) inria (dot) fr</p>
                 <p><strong>Phone:</strong> +33 (0)7 64 24 74 75</p>
             </div>
             <div class="container-fluid contact-form mt-5">
