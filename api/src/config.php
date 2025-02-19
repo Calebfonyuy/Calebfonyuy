@@ -14,6 +14,7 @@ return [
         '/api/publications',
         '/api/teaching',
         '/api/presentations',
+        '/api/service'
     ],
 
     'controller_namespace' => 'Controller',

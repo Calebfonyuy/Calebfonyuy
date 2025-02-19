@@ -41,4 +41,9 @@ return [
         'controller' => 'Controllers\CVController',
         'action' => 'presentations',
     ],
+    '/api/service' =>[
+        'method' => 'GET',
+        'controller' => 'Controllers\CVController',
+        'action' => 'service'
+    ]
 ];
