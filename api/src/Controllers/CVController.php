@@ -71,4 +71,15 @@ class CVController
             $presentations
         );
     }
+
+    public function service(){
+        $service = get_services();
+
+        return new Response(
+            200,
+            'OK',
+            [],
+            $service
+        );
+    }
 }

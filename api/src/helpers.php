@@ -55,3 +55,8 @@ function get_presentations(){
     $presentations = require 'data/presentations.php';
     return $presentations;
 }
+
+function get_services(){
+    $services = require 'data/service.php';
+    return $services;
+}
