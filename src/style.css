@@ -159,3 +159,9 @@ html, body, #app {
   margin-bottom: 25px;
 }
 
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: large;
+}
+
