@@ -7,15 +7,18 @@
 </template>
 
 <script>
+import BASE_URL from '../../api.js';
+
 export default {
     name: 'Photography',
     data() {
-        fetch('https://calebapi.suuynyuy.com/api/gallery')
+        fetch(BASE_URL + 'gallery')
             .then(response => response.json())
             .then(data => {
                 this.photos = data;
             })
             .catch(error => {
+                console.error(process.env.NODE_ENV);
                 console.error('Error:', error);
             });
         return {

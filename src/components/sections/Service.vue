@@ -1,40 +1,36 @@
 <template>
     <div class="service-section">
-        <h2>Volunteering Positions</h2>
+        <span class="page-title">Volunteering Positions</span>
         <ul>
             <li v-for="position in volunteeringPositions" :key="position.id">
-                <h3>{{ position.title }}</h3>
-                <p>{{ position.organization }}</p>
-                <p>{{ position.description }}</p>
+                <h3 class="list-element list-title">{{ position.title }}</h3>
+                <p class="list-element list-detail">{{ position.organization }}</p>
+                <p class="list-element list-detail">{{ position.description }}</p>
+                <p class="list-element list-date">{{ position.dates }}</p>
+                <span class="list-element list-date">
+                    <a :href="position.href" target="_blank" class="list-date">View Event</a>
+                </span>
             </li>
         </ul>
     </div>
 </template>
 
 <script>
+import BASE_URL from '../../api.js';
+
 export default {
     name: 'ServiceSection',
     data() {
+        fetch(BASE_URL + 'service')
+            .then(response => response.json())
+            .then(data => {
+                this.volunteeringPositions = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
         return {
             volunteeringPositions: [
-                {
-                    id: 1,
-                    title: 'Volunteer Teacher',
-                    organization: 'Local Community Center',
-                    description: 'Teaching basic computer skills to adults.'
-                },
-                {
-                    id: 2,
-                    title: 'Event Organizer',
-                    organization: 'Charity Run',
-                    description: 'Organizing annual charity run events.'
-                },
-                {
-                    id: 3,
-                    title: 'Food Bank Helper',
-                    organization: 'City Food Bank',
-                    description: 'Assisting in sorting and distributing food donations.'
-                }
             ]
         };
     }
@@ -42,30 +38,4 @@ export default {
 </script>
 
 <style scoped>
-.service-section {
-    padding: 20px;
-}
-
-.service-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.service-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.service-section li {
-    margin-bottom: 15px;
-}
-
-.service-section h3 {
-    font-size: 20px;
-    margin: 0;
-}
-
-.service-section p {
-    margin: 5px 0;
-}
 </style>
