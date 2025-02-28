@@ -17,10 +17,11 @@ class RequestValidator{
             return $response;
         }
 
-        if (!isset($headers['Content-Type']) || $headers['Content-Type'] !== 'application/json') {
-            $response = new Response(400, 'Bad Request', [], 'Content-Type header is missing or invalid.');
-            return $response;
-        }
+        // This verification creates issues for no-cors mode. I will put it back once CORS is implemented.
+        // if (!isset($headers['Content-Type']) || $headers['Content-Type'] !== 'application/json') {
+        //     $response = new Response(400, 'Bad Request', [], 'Content-Type header is missing or invalid.');
+        //     return $response;
+        // }
 
         if (!isset($body['name']) || !isset($body['email']) || !isset($body['message'])) {
             $response = new Response(400, 'Bad Request', [], 'Request body is missing required fields.');
