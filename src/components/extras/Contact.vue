@@ -33,6 +33,8 @@
 </template>
 
 <script>
+import BASE_URL from '../../api.js';
+
 export default {
     data() {
         return {
@@ -44,21 +46,20 @@ export default {
     methods: {
         handleSubmit() {
             // Send the message to the backend
-            fetch('/api/send-email', {
+            fetch( BASE_URL + 'send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Origin': 'https://calebfonyuy.suuynyuy.com',
                 },
+                mode: 'no-cors',
                 body: JSON.stringify({
                     name: this.name,
                     email: this.email,
                     message: this.message
-                })
+                }),
             })
-            .then(response => response.json())
             .then(data => {
-                console.log('Success:', data);
                 // Clear the form
                 this.name = '';
                 this.email = '';
